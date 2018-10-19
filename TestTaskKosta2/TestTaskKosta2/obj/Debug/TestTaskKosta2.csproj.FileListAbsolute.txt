@@ -1,0 +1,10 @@
+E:\TestTaskKosta_v2\TestTaskKosta2\TestTaskKosta2\bin\Debug\TestTaskKosta2.exe.config
+E:\TestTaskKosta_v2\TestTaskKosta2\TestTaskKosta2\bin\Debug\TestTaskKosta2.exe
+E:\TestTaskKosta_v2\TestTaskKosta2\TestTaskKosta2\bin\Debug\TestTaskKosta2.pdb
+E:\TestTaskKosta_v2\TestTaskKosta2\TestTaskKosta2\obj\Debug\TestTaskKosta2.csprojAssemblyReference.cache
+E:\TestTaskKosta_v2\TestTaskKosta2\TestTaskKosta2\obj\Debug\TestTaskKosta2.Properties.Resources.resources
+E:\TestTaskKosta_v2\TestTaskKosta2\TestTaskKosta2\obj\Debug\TestTaskKosta2.csproj.GenerateResource.cache
+E:\TestTaskKosta_v2\TestTaskKosta2\TestTaskKosta2\obj\Debug\TestTaskKosta2.csproj.CoreCompileInputs.cache
+E:\TestTaskKosta_v2\TestTaskKosta2\TestTaskKosta2\obj\Debug\TestTaskKosta2.exe
+E:\TestTaskKosta_v2\TestTaskKosta2\TestTaskKosta2\obj\Debug\TestTaskKosta2.pdb
+E:\TestTaskKosta_v2\TestTaskKosta2\TestTaskKosta2\obj\Debug\TestTaskKosta2.Form.resources
