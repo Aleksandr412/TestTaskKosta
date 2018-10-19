@@ -86,10 +86,10 @@ namespace TestTaskKosta2
                     DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
                     var today = DateTime.Now;
 
-                    //tbFirstName.Text = row.Cells["FirstName"].Value.ToString();
-                    //tbSurName.Text = row.Cells["SurName"].Value.ToString();
-                    //tbPatronymic.Text = row.Cells["Patronymic"].Value.ToString();
-                   //tbPosition.Text = row.Cells["Position"].Value.ToString();
+                    tbFirstName.Text = row.Cells["FirstName"].Value.ToString();
+                    tbSurName.Text = row.Cells["SurName"].Value.ToString();
+                    tbPatronymic.Text = row.Cells["Patronymic"].Value.ToString();
+                    tbPosition.Text = row.Cells["Position"].Value.ToString();
                     var dob = Convert.ToDateTime(row.Cells["DateOfBirth"].Value.ToString());
                     int years = today.Year - dob.Year;
 
