@@ -1,6 +1,6 @@
 ﻿namespace TestTaskKosta2
 {
-    partial class Form
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -54,8 +54,8 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -146,7 +146,7 @@
             this.tbAge.Location = new System.Drawing.Point(105, 133);
             this.tbAge.Name = "tbAge";
             this.tbAge.ReadOnly = true;
-            this.tbAge.Size = new System.Drawing.Size(187, 20);
+            this.tbAge.Size = new System.Drawing.Size(279, 20);
             this.tbAge.TabIndex = 1;
             // 
             // tbPosition
@@ -154,7 +154,7 @@
             this.tbPosition.Location = new System.Drawing.Point(105, 107);
             this.tbPosition.Name = "tbPosition";
             this.tbPosition.ReadOnly = true;
-            this.tbPosition.Size = new System.Drawing.Size(187, 20);
+            this.tbPosition.Size = new System.Drawing.Size(279, 20);
             this.tbPosition.TabIndex = 1;
             // 
             // tbDOB
@@ -162,7 +162,7 @@
             this.tbDOB.Location = new System.Drawing.Point(105, 81);
             this.tbDOB.Name = "tbDOB";
             this.tbDOB.ReadOnly = true;
-            this.tbDOB.Size = new System.Drawing.Size(187, 20);
+            this.tbDOB.Size = new System.Drawing.Size(279, 20);
             this.tbDOB.TabIndex = 1;
             // 
             // tbPatronymic
@@ -170,7 +170,7 @@
             this.tbPatronymic.Location = new System.Drawing.Point(105, 55);
             this.tbPatronymic.Name = "tbPatronymic";
             this.tbPatronymic.ReadOnly = true;
-            this.tbPatronymic.Size = new System.Drawing.Size(187, 20);
+            this.tbPatronymic.Size = new System.Drawing.Size(279, 20);
             this.tbPatronymic.TabIndex = 1;
             // 
             // tbSurName
@@ -178,7 +178,7 @@
             this.tbSurName.Location = new System.Drawing.Point(105, 6);
             this.tbSurName.Name = "tbSurName";
             this.tbSurName.ReadOnly = true;
-            this.tbSurName.Size = new System.Drawing.Size(187, 20);
+            this.tbSurName.Size = new System.Drawing.Size(279, 20);
             this.tbSurName.TabIndex = 1;
             // 
             // tbFirstName
@@ -186,7 +186,7 @@
             this.tbFirstName.Location = new System.Drawing.Point(105, 29);
             this.tbFirstName.Name = "tbFirstName";
             this.tbFirstName.ReadOnly = true;
-            this.tbFirstName.Size = new System.Drawing.Size(187, 20);
+            this.tbFirstName.Size = new System.Drawing.Size(279, 20);
             this.tbFirstName.TabIndex = 1;
             // 
             // label7

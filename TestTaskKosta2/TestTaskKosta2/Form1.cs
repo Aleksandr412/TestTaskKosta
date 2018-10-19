@@ -11,11 +11,11 @@ using System.Data.SqlClient;
 
 namespace TestTaskKosta2
 {
-    public partial class Form : System.Windows.Forms.Form
+    public partial class Form1 : Form
     {
         SqlConnection connection = new SqlConnection(@"Data Source = .\SQLEXPRESS; Database=TestDB; Trusted_Connection=True;");
 
-        public Form()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -62,7 +62,8 @@ namespace TestTaskKosta2
                 connection.Open();
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "SELECT FirstName, Surname, Patronymic, Position, DateOfBirth FROM Employee WHERE DepartmentID IN (SELECT ID FROM Department WHERE Name = '" + cmbDep.SelectedItem.ToString() + "')";
+                command.CommandText = "SELECT FirstName, Surname, Patronymic, Position, DateOfBirth FROM Employee WHERE" +
+                    " DepartmentID IN (SELECT ID FROM Department WHERE Name = '" + cmbDep.SelectedItem.ToString() + "')";
                 command.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(command);
@@ -76,7 +77,6 @@ namespace TestTaskKosta2
             }
         }
 
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -84,12 +84,26 @@ namespace TestTaskKosta2
                 try
                 {
                     DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                    var today = DateTime.Now;
 
                     tbFirstName.Text = row.Cells["FirstName"].Value.ToString();
                     tbSurName.Text = row.Cells["SurName"].Value.ToString();
                     tbPatronymic.Text = row.Cells["Patronymic"].Value.ToString();
                     tbPosition.Text = row.Cells["Position"].Value.ToString();
-                    tbDOB.Text = row.Cells["DateOfBirth"].Value.ToString();
+                    var dob = Convert.ToDateTime(row.Cells["DateOfBirth"].Value.ToString());
+                    int years = today.Year - dob.Year;
+
+                    if (today.Month < dob.Month || (today.Month == dob.Month && today.Day < dob.Day))
+                    {
+
+                        years = years - 1;
+                        int intCustomerAge = years;
+                        tbAge.Text = Convert.ToString(intCustomerAge);
+                    }
+                    else
+                    {
+                        tbAge.Text = Convert.ToString(years);
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -97,6 +111,5 @@ namespace TestTaskKosta2
                 }
             }
         }
-
     }
 }
